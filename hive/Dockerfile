@@ -1,12 +1,12 @@
 ############################################
-# version : birdben/hive:v1
+# version : silveringsea/hive:v1
 # desc : 当前版本安装的hive
 ############################################
 # 设置继承自我们创建的 hadoop 镜像
-FROM birdben/hadoop:v1
+FROM silveringsea/hadoop:v1
 
 # 下面是一些创建者的基本信息
-MAINTAINER birdben (191654006@163.com)
+MAINTAINER silveringsea (silveringsea@gmail.com)
 
 # 设置环境变量，所有操作都是非交互式的
 ENV DEBIAN_FRONTEND noninteractive

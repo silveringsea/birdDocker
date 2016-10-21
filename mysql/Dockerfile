@@ -1,12 +1,12 @@
 ############################################
-# version : birdben/ubuntu:mysql
+# version : silveringsea/ubuntu:mysql
 # desc : 当前版本安装的MySQL
 ############################################
 # 设置继承自我们创建的 tools 镜像
-FROM birdben/ubuntu:tools
+FROM silveringsea/ubuntu:tools
 
 # 下面是一些创建者的基本信息
-MAINTAINER birdben (191654006@163.com)
+MAINTAINER silveringsea (silveringsea@gmail.com)
 
 # 设置环境变量，所有操作都是非交互式的
 ENV DEBIAN_FRONTEND noninteractive

@@ -1,12 +1,12 @@
 ############################################
-# version : birdben/elk_log_agent:v1
+# version : silveringsea/elk_log_agent:v1
 # desc : 当前版本安装的elk_log_agent
 ############################################
 # 设置继承自我们创建的 jdk7 镜像
-FROM birdben/jdk7:v1
+FROM silveringsea/jdk7:v1
 
 # 下面是一些创建者的基本信息
-MAINTAINER birdben (191654006@163.com)
+MAINTAINER silveringsea (silveringsea@gmail.com)
 
 # 设置环境变量，所有操作都是非交互式的
 ENV DEBIAN_FRONTEND noninteractive

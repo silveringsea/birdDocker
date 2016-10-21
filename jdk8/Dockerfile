@@ -1,12 +1,12 @@
 ############################################
-# version : birdben/jdk8:v1
+# version : silveringsea/jdk8:v1
 # desc : 当前版本安装的jdk8
 ############################################
 # 设置继承自我们创建的 tools 镜像
-FROM birdben/tools:v1
+FROM silveringsea/tools:v1
 
 # 下面是一些创建者的基本信息
-MAINTAINER birdben (191654006@163.com)
+MAINTAINER silveringsea (silveringsea@gmail.com)
 
 # 设置环境变量，所有操作都是非交互式的
 ENV DEBIAN_FRONTEND noninteractive

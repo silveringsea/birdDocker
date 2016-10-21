@@ -1,1 +1,1 @@
-sudo docker build -t "birdben/elasticsearch:v1" .
+sudo docker build -t "silveringsea/elasticsearch:v1" .

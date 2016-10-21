@@ -1,1 +1,1 @@
-docker run -p 9999:22 -t -i -v /docker/logstash:/logstash "birdben/logstash:v1"
+docker run -p 9999:22 -t -i -v /docker/logstash:/logstash "silveringsea/logstash:v1"

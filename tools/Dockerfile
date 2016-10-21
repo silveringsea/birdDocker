@@ -1,12 +1,12 @@
 ############################################
-# version : birdben/tools:v1
+# version : silveringsea/tools:v1
 # desc : 当前版本安装的ssh，wget，curl，supervisor 
 ############################################
 # 设置继承自ubuntu官方镜像
 FROM ubuntu:14.04
 
 # 下面是一些创建者的基本信息
-MAINTAINER birdben (191654006@163.com)
+MAINTAINER silveringsea (silveringsea@gmail.com)
 
 # 注意这里要更改系统的时区设置，因为在 web 应用中经常会用到时区这个系统变量，默认的 ubuntu 会让你的应用程序发生不可思议的效果哦
 ENV DEBIAN_FRONTEND noninteractive
