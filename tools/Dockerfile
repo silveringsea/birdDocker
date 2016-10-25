@@ -14,8 +14,14 @@ ENV DEBIAN_FRONTEND noninteractive
 # 清空ubuntu更新包
 RUN sudo rm -rf /var/lib/apt/lists/*
 
+# 时区
+RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
 # 一次性安装vim，wget，curl，ssh server等必备软件
 # RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe"> /etc/apt/sources.list
+# RUN sudo sed -i 's/http:\/\/archive\.ubuntu\.com\/ubuntu\//http:\/\/mirrors\.163\.com\/ubuntu\//g' /etc/apt/sources.list
+RUN sudo mv /etc/apt/sources.list /etc/apt/sources.list.bak 
+COPY sources.list /etc/apt/sources.list
 RUN sudo apt-get update
 RUN sudo apt-get install -y vim wget curl openssh-server sudo
 RUN sudo mkdir -p /var/run/sshd
