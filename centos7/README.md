@@ -61,7 +61,7 @@ victor/mycat        v1                  5091cdf7b73a        2 hours ago         
 
 3. 运行容器
 
-# docker run -p 8080:8080 -p 9066:9066 -p 8066:8066 -p 81:80 victor/mycat:v1
+# docker run -p 8080:8080 -p 9066:9066 -p 8066:8066 -p 81:80 silveringsea/centos:v1
 
 首先验证tomcat是否启动
 

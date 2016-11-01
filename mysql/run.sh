@@ -24,7 +24,7 @@ t/sda1/var/lib/docker/aufs/mnt/36e6f5dc95e539c90c0e608026431e9088613085526c53efa
 
 docker run -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 mysql
 
-docker run -p 3306:3306 --name mymysql  -v $PWD/conf/my.cnf:/etc/mysql/my.cnf  -v $PWD/logs:/logs -v $PWD/data:/mysql_data -e MYSQL_ROOT_PASSWORD=123456  mysql
+docker run -p 3306:3306 --name mymysql  -e MYSQL_ROOT_PASSWORD=123456 -d mysql -v $PWD/conf/my.cnf:/etc/mysql/my.cnf  -v $PWD/logs:/logs -v $PWD/data:/mysql_data -e MYSQL_ROOT_PASSWORD=123456  mysql
 
  -e MYSQL_ROOT_PASSWORD=123456
 命令说明：
