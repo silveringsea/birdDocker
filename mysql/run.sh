@@ -1,8 +1,10 @@
 
 ### 使用mysql镜像
 执行成功的： 
-docker run -p 9999:22 -p 3306:3306 -t -i -v $PWD/docker/mysql/data/:/logs --name mysql_master -e MYSQL_ROOT_PASSWORD=123456 -d mysql
+docker run -p 9999:22 -p 3306:3306 -t -i -v $PWD/docker/mysql/data/:/logs
+ --name mysql_master -e MYSQL_ROOT_PASSWORD=123456 -d mysql
 
+docker run   -p 3306:3306  -t -i -v $PWD/docker/mysql/data/:/logs --name mysql_master -e MYSQL_ROOT_PASSWORD=ibatest -d mysql
 
 运行容器
 
