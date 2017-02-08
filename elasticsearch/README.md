@@ -19,26 +19,6 @@ $ tar -zxvf elasticsearch-1.7.2.tar.gz
 # 启动ES
 $ sudo ./elasticsearch -d
 
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
-
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
-
 安装head,bigdesk,HQ,kopf插件（可选择安装，建议安装head和bigdesk）
 
 $ ${ES_HOME}/bin/plugin --install mobz/elasticsearch-head
@@ -53,29 +33,7 @@ $ ${ES_HOME}/bin/plugin -install royrusso/elasticsearch-HQ
 $ ${ES_HOME}/bin/plugin -install lmenezes/elasticsearch-kopf
 # 安装完成访问：http://localhost:9200/_plugin/kopf/#!/cluster
 
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
-    10
-    11
-
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
-    10
-    11
+     
 
 安装ik插件
 
@@ -91,30 +49,7 @@ $ cp elasticsearch-analysis-ik-xxx.jar ${ES_HOME}/plugins/ik/
 $ cd elasticsearch-analysis-ik
 $ cp config/ik ${ES_HOME}/config/
 
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
-    10
-    11
-
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
-    10
-    11
-
+    
 配置elasticsearch.yml文件，在文件的最后添加下面的配置
 
 index:
@@ -133,38 +68,7 @@ index:
 index.analysis.analyzer.default.type: ik
 index.store.type: niofs
 
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
-    10
-    11
-    12
-    13
-    14
-    15
-
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
-    10
-    11
-    12
-    13
-    14
-    15
-
+     
 设置ES的内存大小
 
 $ {ES_HOME}/bin
@@ -174,20 +78,7 @@ $ vi elasticsearch
 ES_MIN_MEM=4g
 ES_MAX_MEM=4g
 
-    1
-    2
-    3
-    4
-    5
-    6
-
-    1
-    2
-    3
-    4
-    5
-    6
-
+    
 注意
 
 如果这里不设置ES的内存大小，后面整合ELK环境的时候，Logstash会无法批量在ES创建索引而报错，具体错误信息如下。所以在ES启动时设置ES的内存大小，建议是实际内存的一半
